@@ -9,14 +9,13 @@
 </head>
 <body>
 
-  <!-- ===== 顶部导航 ===== -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top">
         <span class="brand-mark">倪</span>
         <span class="brand-text">前端作品集</span>
       </a>
-      <nav class="site-nav" aria-label="站内导航">
+      <nav class="site-nav">
         <a href="#works">作品</a>
         <a href="#stack">技术</a>
         <a href="#about">关于</a>
@@ -26,40 +25,38 @@
 
   <main id="top">
 
-    <!-- ===== Hero ===== -->
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-kicker">Web 开发技术 · 课程作品集</p>
-        <h1 class="hero-title">你好，我是<span class="accent">倪金博</span><br>这是我的前端学习足迹</h1>
+        <h1 class="hero-title">你好，我是<span class="accent">倪金博</span><br>欢迎来看我的前端作品</h1>
         <p class="hero-sub">
           计算机科学与技术 2403 班 · 学号 2412190727<br>
-          从第一张注册表单开始，每个作品都用 <strong>HTML + CSS + JavaScript</strong> 从零实现，
-          经 <strong>Git / SSH</strong> 推送 GitHub，并由 <strong>Vercel</strong> 部署上线。
+          这里收录了这门课的四次作业，都是 HTML + CSS + JavaScript 写的前端页面，
+          代码推送到 GitHub，线上页面由 Vercel 部署。
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#works">查看作品</a>
           <a class="btn btn-ghost" href="https://github.com/nijinbo916" target="_blank" rel="noopener">GitHub 主页</a>
         </div>
-        <ul class="hero-stats" aria-label="作品统计">
-          <li><strong>4</strong><span>独立项目</span></li>
-          <li><strong>4</strong><span>GitHub 仓库</span></li>
-          <li><strong>8</strong><span>线上入口</span></li>
-          <li><strong>100%</strong><span>纯手写实现</span></li>
+        <ul class="hero-stats">
+          <li><strong>4</strong><span>个作品</span></li>
+          <li><strong>4</strong><span>个仓库</span></li>
+          <li><strong>8</strong><span>个线上入口</span></li>
+          <li><strong>3</strong><span>门技术</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ===== 作品 ===== -->
     <section class="works" id="works">
       <div class="container">
         <div class="section-head">
           <h2>我的作品</h2>
-          <p>三次作业 + 一次加练，点卡片可放大截图，每个作品都有可访问的线上地址。</p>
+          <p>四次作业，点截图可以放大看，每个作品都有在线地址和源码。</p>
         </div>
 
         <div class="work-grid">
 
-          <!-- 1 注册页 -->
+          <!-- 注册页 -->
           <article class="work-card reveal">
             <figure class="work-shot">
               <img src="assets/shots/register-page.png" alt="注册页截图" loading="lazy" data-full="assets/shots/register-page.png">
@@ -71,11 +68,11 @@
                 <span class="work-no">01</span>
               </div>
               <p class="work-desc">
-                第一次课作业。语义化表单 + 四态输入框 + 密码强度条，JS 侧做了规则表驱动的即时校验、
-                密码显隐、提交加载态与 Toast 反馈。
+                第一次课作业。做了用户名、邮箱、密码的即时校验，密码有强度提示，
+                输入框在正确和出错时会显示不同样式。
               </p>
               <ul class="work-tags">
-                <li>表单校验</li><li>正则</li><li>密码强度</li><li>Toast</li>
+                <li>表单校验</li><li>正则</li><li>密码强度</li>
               </ul>
               <div class="work-links">
                 <a class="btn btn-small btn-primary" href="https://register-page-tau.vercel.app/" target="_blank" rel="noopener">在线访问</a>
@@ -84,7 +81,7 @@
             </div>
           </article>
 
-          <!-- 2 Quiz Game -->
+          <!-- Quiz Game -->
           <article class="work-card reveal">
             <figure class="work-shot">
               <img src="assets/shots/quiz-game.png" alt="Quiz Game 截图" loading="lazy" data-full="assets/shots/quiz-game.png">
@@ -96,11 +93,11 @@
                 <span class="work-no">02</span>
               </div>
               <p class="work-desc">
-                第二次课课堂项目。三屏状态机 + 10 题前端题库，Fisher–Yates 洗牌（选项打乱后重算答案下标）、
-                每题 20 秒限时、连对 🔥、SVG 分数环、错题复盘与 localStorage 最高分。
+                第二次课课堂项目。开始、答题、结果三个界面切换，10 道题随机出，
+                每题限时 20 秒，答完能看分数环和错题回顾，最高分记在本地。
               </p>
               <ul class="work-tags">
-                <li>状态机</li><li>洗牌算法</li><li>倒计时</li><li>SVG</li>
+                <li>随机抽题</li><li>倒计时</li><li>分数统计</li><li>错题回顾</li>
               </ul>
               <div class="work-links">
                 <a class="btn btn-small btn-primary" href="https://quiz-game-plum-ten.vercel.app/" target="_blank" rel="noopener">在线访问</a>
@@ -109,7 +106,7 @@
             </div>
           </article>
 
-          <!-- 3 菜单搜索器 -->
+          <!-- 菜单搜索器 -->
           <article class="work-card reveal">
             <figure class="work-shot">
               <img src="assets/shots/menu-searcher.png" alt="菜单搜索器截图" loading="lazy" data-full="assets/shots/menu-searcher.png">
@@ -121,11 +118,11 @@
                 <span class="work-no">03</span>
               </div>
               <p class="work-desc">
-                第二次课作业（第 2 周）。26 条菜品本地数据，关键字同时匹配菜名/描述/分类/标签四字段，
-                7 个分类可叠加筛选，命中文字高亮，支持 <kbd>/</kbd> 与 <kbd>Esc</kbd> 快捷键。
+                第二次课作业。26 条菜品数据放在本地，输入关键词会同时匹配菜名、描述、分类和标签，
+                还能按分类筛选，匹配到的文字会高亮显示。
               </p>
               <ul class="work-tags">
-                <li>多维筛选</li><li>高亮</li><li>空状态</li><li>快捷键</li>
+                <li>关键字搜索</li><li>分类筛选</li><li>高亮</li><li>快捷键</li>
               </ul>
               <div class="work-links">
                 <a class="btn btn-small btn-primary" href="https://menu-searcher-lemon.vercel.app/" target="_blank" rel="noopener">在线访问</a>
@@ -134,7 +131,7 @@
             </div>
           </article>
 
-          <!-- 4 Recipe Finder -->
+          <!-- Recipe Finder -->
           <article class="work-card reveal">
             <figure class="work-shot">
               <img src="assets/shots/recipe-finder.png" alt="Recipe Finder 截图" loading="lazy" data-full="assets/shots/recipe-finder.png">
@@ -146,11 +143,11 @@
                 <span class="work-no">04</span>
               </div>
               <p class="work-desc">
-                在视频形态上加练的接口版搜索器：<code>fetch</code> 调 TheMealDB 公共接口，
-                <code>async/await</code> 异步流程、搜索列表 → 详情配料表、XSS 转义与三类异常兜底。
+                额外做的一个接口版搜索器：用 <code>fetch</code> 调 TheMealDB 的公开接口，
+                能搜菜谱，点进去看配料和做法，搜不到或请求失败时会有提示。
               </p>
               <ul class="work-tags">
-                <li>fetch API</li><li>async/await</li><li>事件委托</li><li>XSS 转义</li>
+                <li>接口请求</li><li>async/await</li><li>加载状态</li><li>错误提示</li>
               </ul>
               <div class="work-links">
                 <a class="btn btn-small btn-primary" href="https://recipe-finder-hazel-three.vercel.app/" target="_blank" rel="noopener">在线访问</a>
@@ -163,37 +160,35 @@
       </div>
     </section>
 
-    <!-- ===== 技术栈 ===== -->
     <section class="stack" id="stack">
       <div class="container">
         <div class="section-head">
           <h2>用到的技术</h2>
-          <p>全部作品不依赖框架，专注把基础打牢。</p>
+          <p>没有用框架，都是 HTML、CSS、JavaScript 三件套。</p>
         </div>
         <div class="stack-grid">
-          <div class="stack-item reveal"><h3>HTML</h3><p>语义化标签、表单与无障碍属性、aria-live 反馈区</p></div>
-          <div class="stack-item reveal"><h3>CSS</h3><p>变量化设计、Grid / Flex 布局、响应式与动效偏好</p></div>
-          <div class="stack-item reveal"><h3>JavaScript</h3><p>DOM 事件委托、状态管理、fetch 异步、localStorage</p></div>
-          <div class="stack-item reveal"><h3>工程化</h3><p>Git 版本管理、SSH 协议推送、Vercel / Pages 自动部署</p></div>
+          <div class="stack-item reveal"><h3>HTML</h3><p>语义化标签、表单元素、页面结构</p></div>
+          <div class="stack-item reveal"><h3>CSS</h3><p>Flex / Grid 布局、配色、响应式</p></div>
+          <div class="stack-item reveal"><h3>JavaScript</h3><p>DOM 操作、事件处理、fetch 请求、本地存储</p></div>
+          <div class="stack-item reveal"><h3>工具</h3><p>Git 推送到 GitHub，Vercel 和 Pages 部署</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ===== 关于 ===== -->
     <section class="about" id="about">
       <div class="container about-inner">
         <div class="section-head">
           <h2>关于这个作品集</h2>
-          <p>它本身也是课程作业：用 HTML + CSS + JS 展示前面的作品。</p>
+          <p>这个页面本身也是作业，用 HTML + CSS + JS 展示前面做过的作品。</p>
         </div>
         <div class="about-cards">
           <div class="about-card reveal">
-            <h3>学习路线</h3>
-            <p>第 1 课注册页 → 第 2 课 Quiz Game 与菜单搜索器 → 接口版加练 → 第 4 课 Vue 框架入门。每一步都留下了可访问的代码与线上页面。</p>
+            <h3>作品顺序</h3>
+            <p>注册页 → Quiz Game → 菜单搜索器 → Recipe Finder，都是按课程进度一个个做出来的。</p>
           </div>
           <div class="about-card reveal">
             <h3>部署说明</h3>
-            <p>每个作品都是独立仓库，推送 <code>main</code> 分支后由 Vercel 自动构建部署；GitHub Pages 作为备用入口，保证任何网络环境都能访问。</p>
+            <p>每个作品是单独的仓库，推送到 GitHub 后用 Vercel 部署；另外开了 GitHub Pages 作为备用入口。</p>
           </div>
           <div class="about-card reveal">
             <h3>联系方式</h3>
@@ -207,14 +202,14 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 倪金博 · Web 开发技术课程作品集 · HTML + CSS + JS 手写实现</p>
-      <p class="footer-note">本页截图均为各作品真实线上页面</p>
+      <p>© 2026 倪金博 · Web 开发技术课程作品集</p>
+      <p class="footer-note">截图都是各个作品实际跑起来的样子</p>
     </div>
   </footer>
 
   <!-- 截图灯箱 -->
   <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox-close" id="lightbox-close" aria-label="关闭预览">×</button>
+    <button class="lightbox-close" id="lightbox-close">×</button>
     <img id="lightbox-img" src="" alt="作品截图大图">
     <p class="lightbox-tip">点击任意处关闭</p>
   </div>
