@@ -6,9 +6,9 @@
 
 ## 在线预览
 
-- **Vercel 线上地址**：<部署后填写>
-- **GitHub Pages 备用地址**：<开启后填写>
-- **GitHub 仓库地址**：<待填写>
+- **Vercel 线上地址**：<https://portfolio-theta-one-aig3koben9.vercel.app/>
+- **GitHub Pages 备用地址**：<https://nijinbo916.github.io/portfolio/>（国内可直连；`*.vercel.app` 存在 DNS 污染，打不开时用这个）
+- **GitHub 仓库地址**：<https://github.com/nijinbo916/portfolio>
 
 ## 收录的作品
 
